@@ -56,7 +56,7 @@
                 <div class="form-group">
                     <label for="">Localité</label>
                     <select name="local">
-                        <option><?= ($projet['nomlocal']) ? $projet['nomlocal']  : 'Selectionnez localité' ?></option>
+                        <option value="<?= ($projet['codlocal']) ? $projet['codlocal']  : null ?>"><?= ($projet['nomlocal']) ? $projet['nomlocal']  : 'Selectionnez localité' ?></option>
                         <?php
                         require_once('../models/connexion.php'); 
                         $db = dbConnect();

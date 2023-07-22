@@ -48,7 +48,7 @@ function addProjet($code, $nomprojet, $datlance, $duree, $local){
 //rechercher les projets
 function rechercheProjets($code) {
     $db = dbConnect();
-    $req = $db->prepare('SELECT codprojet,nomprojet,datelance,duree,nomlocal FROM projet p LEFT JOIN localite l ON p.codlocal=l.codlocal WHERE codprojet LIKE :code');
+    $req = $db->prepare('SELECT codprojet,nomprojet,datelance,duree,l.codlocal,nomlocal FROM projet p LEFT JOIN localite l ON p.codlocal=l.codlocal WHERE codprojet LIKE :code');
     $req->execute(array(':code' => '%' . $code . '%'));
     return $req;
 }
