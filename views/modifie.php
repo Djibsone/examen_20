@@ -15,7 +15,7 @@
             </div>
             <a href="../">
                 <button type="" class="goBack">
-                    <i style="font-size: 25px; cursor: pointer;" class="fa fa-arrow-left" title="Rétour"></i>
+                    <i style="cursor: pointer;" class="fa fa-arrow-left fa-2x" title="Rétour"></i>
                 </button>
             </a>
             <form action="" method="post">

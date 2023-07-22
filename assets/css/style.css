@@ -179,3 +179,7 @@ button:hover[type="reset"] {
 .goBack {
   margin-left: 20px;
 }
+
+a {
+  text-decoration: none;
+}
