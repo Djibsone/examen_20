@@ -21,6 +21,11 @@ h2 {
   border: 1px solid #000;
 }
 
+.card a button {
+  display: flex;
+  margin-top: -40px;
+}
+
 .containe {
   display: flex;
   flex-grow: 1;
