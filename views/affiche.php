@@ -43,7 +43,3 @@
 <!-- footer start -->
 <?php include './views/footer.php' ?>
 <!-- footer end -->
-
-<!-- footer start -->
-<?php include './views/footer.php' ?>
-<!-- footer end -->
