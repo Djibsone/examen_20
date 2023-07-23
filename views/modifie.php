@@ -26,7 +26,7 @@
                 <div class="form-group row my-3">
                     <label class="col-sm-2 col-form-label col-form-label-lg">Envoyer</label>
                     <div class="col-sm-2">
-                        <input type="submit" class="ok" name="ok" value="OK">
+                        <input type="submit" class="ok" name="ok" value="Réchercher">
                     </div>
                 </div>
             </form>
