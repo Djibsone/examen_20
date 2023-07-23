@@ -1,5 +1,3 @@
-<?php include './controllers/affiche.php' ?>
-
 <!-- header start -->
 <?php include './header.php' ?>
 <!-- header end -->

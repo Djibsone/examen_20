@@ -1,3 +1,5 @@
+<?php include './controllers/affiche.php' ?>
+
 <div class="card">
   <h2>SAISIE DES PROJETS</h2>
   <div class="form-group">
@@ -28,13 +30,7 @@
       <label for="">Localité</label>
       <select name="local">
         <option>Selectionnez localité</option>
-        <?php
-          require_once('./models/connexion.php'); 
-          $db = dbConnect();
-          $req = $db->query('SELECT * FROM localite ORDER BY codlocal DESC');
-          $localites = $req;
-          foreach($localites as $localite): 
-        ?>
+        <?php foreach($localites as $localite): ?>
           <option value="<?= $localite['codlocal'] ?>"><?= $localite['nomlocal'] ?></option>
         <?php endforeach; ?> 
       </select>

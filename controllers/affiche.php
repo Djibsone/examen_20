@@ -6,4 +6,7 @@ require_once('./models/connexion.php');
     // var_dump($stmt);
     
     //compter le numbre candidats par filere
-    $total_projets = countProjets(); 
+    $total_projets = countProjets();
+
+    //Select localite
+    $localites = getLocalite();

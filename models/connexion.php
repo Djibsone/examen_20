@@ -61,16 +61,11 @@ function countProjets() {
     return $result['total_projets'];
 }
 
-//Supprimer l'nfos user dans la table password_reset
-function delUser($token){
+//Recuperer localites
+function getLocalite(){
     $db = dbConnect();
-
-    $req = $db->prepare('DELETE FROM password_reset WHERE token_user = ?');
-
-    if($req->execute(array($token)))
-        return true;
-    else
-        return false;
+    $req = $db->query('SELECT * FROM localite ORDER BY codlocal DESC');
+    return $req;
 }
 
 //Modifier un info user
